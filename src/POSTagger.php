@@ -27,17 +27,4 @@ class POSTagger extends TreeTagger
         parent::__construct();
         $this->setPath($path);
     }
-
-    /**
-     * Tag multiple arrays of tokens for sentences
-     *
-     * @param $sentences array array of arrays of tokens
-     *
-     * @return mixed
-     */
-    public function batchTag($sentences, $lang = 'english')
-    {
-        $this->setLanguage($lang);
-        return parent::batchTag($sentences);
-    }
 }
