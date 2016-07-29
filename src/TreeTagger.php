@@ -40,7 +40,7 @@ class TreeTagger extends Base
     public function setLanguage($lang)
     {
         $command = $this->_getCommandPath($lang);
-        echo "Command: {$command}\n";
+        //echo "TreeTagger Command: {$command}\n";
         if (is_executable($command)) {
             $this->language = $lang;
         } else {
