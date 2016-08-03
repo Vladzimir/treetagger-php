@@ -100,7 +100,7 @@ class TreeTagger extends Base
         $handle = fopen($tmpfname, 'w');
 
         foreach ($sentences as $k => $v) {
-            $sentences[$k] = implode(' ', $v);
+            $sentences[$k] = implode("\n", $v);
         }
         $str = implode("\n", $sentences);
 
